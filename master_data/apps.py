@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 
-class UsersConfig(AppConfig):
+class MasterDataConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "users"
-    verbose_name = "User Accounts"
+    name = "master_data"
+    verbose_name = "Master Data"
