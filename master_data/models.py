@@ -41,3 +41,12 @@ class City(models.Model):
         verbose_name_plural = "Cities"
 
 
+class AccountType(models.Model):
+    type_id = models.CharField(max_length=10, primary_key=True)
+    type_name = models.CharField(max_length=50)
+    type_description = models.CharField(max_length=255, blank=True)
+
+    def __str__(self):
+        return self.type_name
+
+

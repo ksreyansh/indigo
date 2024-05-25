@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Country, State, City
+from .models import Country, State, City, AccountType
 
 
 # Register your models here.
@@ -20,3 +20,9 @@ class StateModelAdmin(admin.ModelAdmin):
 class CityModelAdmin(admin.ModelAdmin):
     list_display = ['city_code', 'city_name', 'state_code']
     ordering = ('city_code',)
+
+
+@admin.register(AccountType)
+class AccountTpeAdmin(admin.ModelAdmin):
+    list_display = ['type_id', 'type_name']
+    ordering = ('type_id', )

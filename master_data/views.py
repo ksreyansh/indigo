@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 
-from .models import Country, State, City
-from .serializers import CountrySerializer, StateSerializer, CitySerializer
+from .models import Country, State, City, AccountType
+from .serializers import CountrySerializer, StateSerializer, CitySerializer, AccountTypeSerializer
 
 
 # Create your views here.
@@ -18,3 +18,8 @@ class StateViewSet(viewsets.ModelViewSet):
 class CityViewSet(viewsets.ModelViewSet):
     queryset = City.objects.all()
     serializer_class = CitySerializer
+
+
+class AccountTypeViewSet(viewsets.ModelViewSet):
+    queryset = AccountType.objects.all()
+    serializer_class = AccountTypeSerializer

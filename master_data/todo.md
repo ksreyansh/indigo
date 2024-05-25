@@ -3,3 +3,4 @@
 2. #### URL testing
 3. #### Populate fields
 4. #### Add import csv function in admin
+5. #### Add nominee details
